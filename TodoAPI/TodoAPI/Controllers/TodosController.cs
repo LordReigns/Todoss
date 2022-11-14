@@ -51,7 +51,7 @@ namespace TodoAPI.Controllers
                 return NotFound();
             }
             _context.Todos.Attach(todo);
-            todo.IsCompleted = true;
+            todo.IsCompleted = !todo.IsCompleted;
        
 
             try
