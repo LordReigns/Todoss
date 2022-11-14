@@ -1,7 +1,9 @@
-"Todoss" App
+# "Todoss" App
 
 
-NOTES HERE -->
+## `NOTES HERE -->`
 
 
- DB-FIRST COMMAND (windows sqlserver) : scaffold-dbcontext "Server=.\;Database=TodoDB;TrustServerCertificate=True;Integrated Security=SSPI;" Microsoft.EntityFrameworkCore.SqlServer -o Model 
+#### DB-FIRST COMMAND (windows sqlserver) 
+
+ `scaffold-dbcontext "Server=.\;Database=TodoDB;TrustServerCertificate=True;Integrated Security=SSPI;" Microsoft.EntityFrameworkCore.SqlServer -o Model` 
