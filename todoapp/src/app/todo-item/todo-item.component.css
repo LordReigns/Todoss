@@ -1,0 +1,13 @@
+.card-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.completed {
+    background-color: lightgreen;
+}
+
+.not-completed{
+    background-color: lightcoral;
+}
