@@ -24,13 +24,9 @@ public partial class TodoDbContext : DbContext
     {
         modelBuilder.Entity<Todo>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("todo");
+            entity.ToTable("todo");
 
-            entity.Property(e => e.Id)
-                .ValueGeneratedOnAdd()
-                .HasColumnName("id");
+            entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.IsCompleted).HasColumnName("isCompleted");
             entity.Property(e => e.Name)
                 .HasMaxLength(100)
